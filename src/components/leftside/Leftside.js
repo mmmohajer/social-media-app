@@ -5,7 +5,7 @@ import "./leftside.css";
 const Leftside = () => {
   return (
     <div>
-      <p>Hello</p>
+      <p>Left Side</p>
     </div>
   );
 };
