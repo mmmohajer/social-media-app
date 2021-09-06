@@ -4,7 +4,7 @@ import "./rightside.css";
 
 const Rightside = () => {
   return (
-    <div>
+    <div className="rightside">
       <p>Right Side</p>
     </div>
   );
