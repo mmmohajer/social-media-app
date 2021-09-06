@@ -1,11 +1,10 @@
 import React from "react";
 
-function Home() {
-  return (
-    <div>
-      <p>This is homepage.</p>
-    </div>
-  );
-}
+import Topbar from "../../components/topbar/Topbar";
+import "./home.css";
+
+const Home = () => {
+  return <Topbar />;
+};
 
 export default Home;
