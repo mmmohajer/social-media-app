@@ -12,6 +12,8 @@ import {
 } from "@material-ui/icons";
 
 import "./leftside.css";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 const Leftside = () => {
   return (
@@ -58,50 +60,9 @@ const Leftside = () => {
         <button className="leftsideButton">Show More</button>
         <hr className="leftsideHr" />
         <ul className="leftsideFriendList">
-          <li className="leftsideFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt="Followrs Photo"
-              className="leftsideFriendImg"
-            />
-            <span className="leftsideFriendName">Jane Doe</span>
-          </li>
-
-          <li className="leftsideFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt="Followrs Photo"
-              className="leftsideFriendImg"
-            />
-            <span className="leftsideFriendName">Jane Doe</span>
-          </li>
-
-          <li className="leftsideFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt="Followrs Photo"
-              className="leftsideFriendImg"
-            />
-            <span className="leftsideFriendName">Jane Doe</span>
-          </li>
-
-          <li className="leftsideFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt="Followrs Photo"
-              className="leftsideFriendImg"
-            />
-            <span className="leftsideFriendName">Jane Doe</span>
-          </li>
-
-          <li className="leftsideFriend">
-            <img
-              src="/assets/person/2.jpeg"
-              alt="Followrs Photo"
-              className="leftsideFriendImg"
-            />
-            <span className="leftsideFriendName">Jane Doe</span>
-          </li>
+          {Users.map((u) => (
+            <CloseFriend key={u.id} user={u} />
+          ))}
         </ul>
       </div>
     </div>
